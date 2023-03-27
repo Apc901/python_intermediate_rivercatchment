@@ -36,8 +36,7 @@ def read_variable_from_csv(filename):
 
 def daily_total(data):
     """Calculate the daily total of a 2D data array.
-    
-    :param data: A 2D Pandas data frame with measurement data. 
+    :param data: A 2D Pandas data frame with measurement data.
                  Index must be np.datetime64 compatible format. Columns are measurement sites.
     :returns: A 2D Pandas data frame with total values of the measurements for each day.
     """
@@ -68,4 +67,3 @@ def daily_min(data):
     :returns: A 2D Pandas data frame with max values of the measurements for each day
     """
     return data.groupby(data.index.date).min()
-
