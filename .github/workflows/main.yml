@@ -24,4 +24,4 @@ jobs:
 
       - name: Test with PyTest
         run: |
-          pyton -m pytest --cov=catchment.models tests\test_models.py
+          phyton -m pytest --cov=catchment.models tests\test_models.py
