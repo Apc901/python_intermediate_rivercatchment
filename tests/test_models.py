@@ -41,38 +41,6 @@ def test_daily_mean(test_data, test_index, test_columns,
                            pd.DataFrame(data=expected_data, index=expected_index, columns=expected_columns))
 
 
-#@pytest.mark.parametrize(
- #   "test_data, test_index, test_columns, expected_data, expected_index, expected_columns",
-  #  [
-   #     (
-    #        [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0], [0.0, 0.0, 0.0]],
-     #       [pd.to_datetime('2000-01-01 01:00'),
-      #       pd.to_datetime('2000-01-01 02:00'),
-       #      pd.to_datetime('2000-01-01 03:00')],
-        #    ['A', 'B', 'C'],
-         #   [[0.0, 0.0, 0.0]],
-          #  [datetime.date(2000, 1, 1)],
-           # ['A', 'B', 'C']
-      #  ),
-       # (
-        #    [[2, 4, 5], [3, 9, 6], [8, 1, 3]],
-         #   [pd.to_datetime('2000-01-01 01:00'),
-          #   pd.to_datetime('2000-01-01 02:00'),
-           #  pd.to_datetime('2000-01-01 03:00')],
-            #['A', 'B', 'C'],
-           # [[5, 9, 8]],
-           # [datetime.date(2000, 1, 1)],
-            #['A', 'B', 'C']
-      #  ),
-   # ]
-#)
-#def test_daily_max2(test_data, test_index, test_columns,
- #                   expected_data, expected_index, expected_columns):
-  #  """Test max function works for an array of zeros and positive integers"""
-   # from catchment.models import daily_max
-    #pdt.assert_frame_equal(daily_max(pd.DataFrame(data=test_data, index=test_index, columns=test_columns)),
-                           pd.DataFrame(data=expected_data, index=expected_index, columns=expected_columns))
-
 
 def test_daily_mean_zeros():
     """Test that mean function works for an array of zeros."""
